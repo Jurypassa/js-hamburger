@@ -1,9 +1,17 @@
-const hidden = document.querySelector("i.close");
+const hidden = document.querySelector(".fas");
 
 hidden.addEventListener("click", function(){
-    alert("ciao");
 
-    // const hamburger = document.querySelector(".hamburger-menu");
+    const hamburger = document.querySelector(".hamburger-menu");
 
-    // hamburger.className += ".active";
+    hamburger.classList += " active";
+});
+
+const show = document.querySelector(".close .fas");
+
+show.addEventListener("click", function(){
+
+    const hamburger = document.querySelector(".hamburger-menu");
+
+    hamburger.classList.remove("active");
 });
